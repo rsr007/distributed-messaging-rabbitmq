@@ -1,0 +1,15 @@
+# Maven build output
+target/
+*.class
+*.jar
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+out/
+
+# OS-specific
+.DS_Store
+
+# Logs
+*.log
