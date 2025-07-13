@@ -11,6 +11,6 @@ public class ProduceService {
     RabbitTemplate rabbitTemplate;
 
     public void sendData(String data) {
-        rabbitTemplate.convertAndSend("direct-exchange", "queue1.key", data);
+        rabbitTemplate.convertAndSend("direct-exchange", "q1.key", data);
     }
 }

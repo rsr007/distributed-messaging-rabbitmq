@@ -16,7 +16,7 @@ public class ProducerController {
 
     @PostMapping(value="/produce/")
     public ResponseEntity<String> sendData(@RequestBody Student student){
-        String msg = "Data pushed for : " + student.getName();
+        String msg = "Info for user: " + student.getName();
         produceService.sendData(msg);
         return ResponseEntity.ok(msg);
     }
