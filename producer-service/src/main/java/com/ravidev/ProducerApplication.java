@@ -1,7 +1,13 @@
 package com.ravidev;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@SpringBootApplication
 public class ProducerApplication {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SpringApplication.run(ProducerApplication.class, args);
     }
 }
